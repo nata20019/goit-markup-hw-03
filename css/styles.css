@@ -1,14 +1,60 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #fff;
   font-style: normal;
 }
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+p {
+  margin: 0;
+}
+ul {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.container.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container {
+  list-style-type: none;
+  display: block;
+  align-items: center;
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+  flex-shrink: 0;
+}
+
 .up-block {
   color: #e7e9fc;
   color: #ffffff;
 }
 .nav-header {
+  display: flex;
+  margin-right: auto;
 }
 .logo {
   color: #4d5ae5;
@@ -27,6 +73,11 @@ body {
   line-height: 1.16;
   letter-spacing: 0.54px;
   text-transform: uppercase;
+  display: inline-flex;
+  height: 24px;
+  align-items: center;
+  flex-shrink: 0;
+  margin-right: 76px;
 }
 .logo-light {
   color: #f4f4fd;
@@ -36,8 +87,14 @@ body {
   line-height: 1.16;
   letter-spacing: 0.54px;
   text-transform: uppercase;
+  display: inline-flex;
+  height: 24px;
+  align-items: center;
+  flex-shrink: 0;
 }
 .page-nav {
+  display: flex;
+  gap: 40px;
 }
 .link {
   color: #2e2f42;
@@ -47,6 +104,8 @@ body {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  display: inline-flex;
+  align-items: flex-start;
 }
 .link:hover,
 .link:focus {
@@ -56,6 +115,11 @@ body {
   font-style: normal;
 }
 .page-adress {
+  display: flex;
+  gap: 40px;
+}
+.adress-info {
+  gap: 40px;
 }
 .adress {
   color: #434455;
@@ -74,6 +138,12 @@ body {
 }
 .page-solutions {
   background-color: #2e2f42;
+  padding: 188px 0;
+}
+.container.solution {
+  width: 1440px;
+  height: 600px;
+  flex-shrink: 0;
 }
 .page-title {
   color: #fff;
@@ -83,6 +153,8 @@ body {
   line-height: 1.07;
   letter-spacing: 1.12px;
   text-align: center;
+  width: 496px;
+  margin: 0 auto;
 }
 .page-button {
   cursor: pointer;
@@ -92,25 +164,45 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   background: #4d5ae5;
+  display: block;
+  padding: 16px 32px;
+  margin: 0 auto;
+  align-items: flex-start;
+  gap: 10px;
 }
 .page-button:hover,
 .page-button:focus {
   background-color: #404bbf;
 }
 .page-factors {
+  padding: 120px 0;
 }
-.page-title-inside {
-  color: #2e2f42;
-  font-family: Roboto;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .list {
-  background-color: #ffffff;
+  display: flex;
+  gap: 24px;
+}
+.information {
+  padding: 20px;
+}
+.factors-items {
+  display: flex;
+  width: 264px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
 }
 .section-title {
   color: #2e2f42;
@@ -127,15 +219,31 @@ body {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  width: 264px;
 }
 .page-team {
   background-color: #f4f4fd;
+  padding: 120px 0;
+}
+.page-title-inside {
+  color: var(--NAVY-BLUE, #2e2f42);
+  text-align: center;
+
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
 }
 .list-first {
   background-color: #ffffff;
 }
 .list-foto {
   background: #f4f4fd;
+  width: 264px;
+  height: 260px;
 }
 .list-name {
   color: #2e2f42;
@@ -157,6 +265,23 @@ body {
 .page-portfolio {
   background-color: #fff;
 }
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 120px 0;
+}
+.portfolio-items {
+  display: flex;
+  width: calc((100% - 24px * 2) / 3);
+  height: 420px;
+  padding-bottom: 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  flex-shrink: 0;
+  background: var(--WHITE, #fff);
+}
 .list-portf {
   color: #f4f4fd;
   font-family: Roboto;
@@ -167,6 +292,7 @@ body {
 }
 .down-block {
   background: #2e2f42;
+  padding: 120px 0;
 }
 .text-footer {
   color: #f4f4fd;
