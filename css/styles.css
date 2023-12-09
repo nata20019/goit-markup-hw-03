@@ -165,8 +165,9 @@ img {
   letter-spacing: 0.04em;
   background: #4d5ae5;
   display: block;
-  padding: 16px 32px;
   margin: 0 auto;
+  padding: 16px 32px;
+
   align-items: flex-start;
   gap: 10px;
 }
@@ -281,6 +282,7 @@ img {
   gap: 32px;
   flex-shrink: 0;
   background: var(--WHITE, #fff);
+  border: 1px solid var(--CORNFLOWER, #e7e9fc);
 }
 .list-portf {
   color: #f4f4fd;
