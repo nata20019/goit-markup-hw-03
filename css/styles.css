@@ -82,6 +82,16 @@ img {
   flex-shrink: 0;
   margin-right: 76px;
 }
+.logo-down {
+  color: #4d5ae5;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
 .logo-light {
   color: #f4f4fd;
   font-family: "Raleway", sans-serif;
@@ -205,7 +215,7 @@ img {
   gap: 24px;
 }
 .information {
-  padding: 32px 16px;
+  padding: 32px 0;
   border: 1px solid #e7e9fc;
 }
 .factors-items {
@@ -308,6 +318,11 @@ img {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.32px;
+}
+.information-portf {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .down-block {
   background: #2e2f42;
