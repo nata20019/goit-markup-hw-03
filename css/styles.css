@@ -22,7 +22,6 @@ p {
   margin: 0;
 }
 ul {
-  display: block;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -39,13 +38,9 @@ img {
 }
 
 .container {
-  list-style-type: none;
-  display: block;
-  align-items: center;
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
-  flex-shrink: 0;
 }
 
 .up-block {
@@ -70,17 +65,6 @@ img {
 }
 .logo-dark {
   color: #2e2f42;
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.16;
-  letter-spacing: 0.54px;
-  text-transform: uppercase;
-  display: inline-flex;
-  height: 24px;
-  align-items: center;
-  flex-shrink: 0;
-  margin-right: 76px;
 }
 .logo-down {
   color: #4d5ae5;
@@ -94,17 +78,6 @@ img {
 }
 .logo-light {
   color: #f4f4fd;
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.16;
-  letter-spacing: 0.54px;
-  text-transform: uppercase;
-  display: inline-flex;
-  height: 24px;
-  align-items: center;
-  flex-shrink: 0;
-  margin-bottom: 16px;
 }
 .page-nav {
   display: flex;
@@ -156,9 +129,6 @@ img {
   padding: 188px 0;
 }
 .container.solution {
-  width: 1440px;
-  height: 600px;
-  flex-shrink: 0;
 }
 .page-title {
   color: #fff;
@@ -218,7 +188,6 @@ img {
   border: 1px solid #e7e9fc;
 }
 .factors-items {
-  display: flex;
   width: 264px;
   flex-direction: column;
   align-items: flex-start;
@@ -274,7 +243,6 @@ img {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
-  text-align: center;
   margin-bottom: 8px;
 }
 .list-prof {
@@ -285,7 +253,6 @@ img {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.32px;
-  text-align: center;
 }
 .page-portfolio {
   background-color: #fff;
@@ -296,18 +263,10 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  padding: 120px 0;
   row-gap: 48px;
 }
 .portfolio-items {
-  display: flex;
   width: calc((100% - 24px * 2) / 3);
-  height: 420px;
-  padding-bottom: 32px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 32px;
-  flex-shrink: 0;
   background: var(--WHITE, #fff);
   border: 1px solid var(--CORNFLOWER, #e7e9fc);
 }
